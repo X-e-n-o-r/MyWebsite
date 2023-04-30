@@ -79,44 +79,13 @@ body {
   min-height: 100vh;
 }
 
-p {
-  font-size: 18px;
-}
-
 h2 {
-  color:rgb(32, 253, 220);
-  margin-bottom: 20px;
-  font-size: 70px;
+  color: #08fdd8;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 40px;
+  left: -10px;
+  font-size: 6rem;
+  line-height: 6.7rem;
 }
-
-h2::before {
-  content: '<h2>';
-  font-family: 'La Belle Aurore',cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  top: -1em;
-  left: -0.5em;
-}
-
-h2::after {
-  content: '<h2/>';
-  font-family: 'La Belle Aurore',cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  left: -0.5em;
-  bottom: -1em;
-}
-
-.h2-head:hover {
-  color: rgb(253, 33, 85);
-  animation: lightning 0.2s ease-in-out;
-}
-
-@keyframes lightning {
-  from {color: rgb(32, 253, 220);}
-  to {color: rgb(253, 33, 85);}
-}
-
-

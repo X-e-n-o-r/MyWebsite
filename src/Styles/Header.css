@@ -44,7 +44,7 @@
     position: relative;
 }
 
-.text-zone p::before {
+.text-zone > p::before {
     content: '<p>';
     font-family: 'La Belle Aurore', cursive;
     color: #666565;
@@ -54,7 +54,7 @@
     left: -10px;
 }
 
-.text-zone p::after {
+.text-zone > p::after {
     content: '</p>';
     font-family: 'La Belle Aurore', cursive;
     color: #666565;

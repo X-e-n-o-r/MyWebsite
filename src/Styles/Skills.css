@@ -2,11 +2,74 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    width: 90vw;
+    min-height: 100vh;
+}
+
+.skills-header::before {
+    content: '<h2>';
+    position: absolute;
+    top: -55px;
+    left: -10px;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.skills-header::after {
+    content: '</h2>';
+    position: absolute;
+    bottom: -60px;
+    left: -10px;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
 }
 
 .skills-description {
     display: flex;
     flex-direction: column;
     margin-left: 5rem;
+}
+
+.h2-head {
+    transition: all 0.3s ease-in-out;
+    color: rgb(32, 253, 220);
+}
+
+.h2-head:hover {
+    color: rgb(253, 33, 85);
+}
+
+.text-zone {
+    position: relative;
+}
+
+.text-zone > p {
+    font-size: 2em;
+    position: relative;
+}
+
+.text-zone > p::before {
+    content: '<p>';
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.text-zone > p::after {
+    content: '</p>';
+    position: absolute;
+    bottom: -40px;
+    left: -10px;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
 }
