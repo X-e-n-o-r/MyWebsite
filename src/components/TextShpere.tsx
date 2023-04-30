@@ -1,11 +1,8 @@
 import { useEffect } from "react";
 import "../Styles/TextShpere.css";
-
-// Importing TagCloud package
 import TagCloud from "TagCloud";
 
 const TextShpere = () => {
-  // Animation settings for Text Cloud
   useEffect(() => {
     return () => {
       const container: any = ".tagcloud";

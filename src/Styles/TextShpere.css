@@ -19,11 +19,11 @@
 }
 
 .tagcloud--item {
-    color: #00ffffff;
+    color:rgb(32, 253, 220);
     text-transform: uppercase;
 }
 
 .tagcloud--item:hover {
-    color: #ff6347;
+    color: rgb(253, 33, 85);
 }
             

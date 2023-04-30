@@ -1,0 +1,34 @@
+.cntbtn-wrapper {
+    width: 200px;
+    height: 130px;
+}
+
+.contact-button {
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    min-width: 200px;
+    font-size: 1.5rem;  
+    cursor: pointer;
+    position: relative;
+}
+
+.contact-button::after, .contact-button::before {
+    border: 2px solid rgb(253, 33, 85);
+    content: "";
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-button:hover::after {
+    transform: translate(-7px, -7px);
+}
+
+.contact-button:hover::before {
+    transform: translate(7px, 7px);
+}
