@@ -23,6 +23,8 @@ const TextShpere = () => (
             "git",
             "Github",
             "Sass",
+            'HTML',
+            'CSS',
         ]}
     </TagCloud>
 );

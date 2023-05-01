@@ -68,6 +68,7 @@
     margin-top: 40px;
     font-size: clamp(1.2rem, 2.5vw, 2rem);
     position: relative;
+    margin-left: 5px;
 }
 
 .skills > .text-zone > p::before {
@@ -93,6 +94,9 @@
 }
 
 @media (max-width: 1500px) {
+    .skills > .text-zone > p {
+        margin-left: 0;
+    }
     .skills-header {
         font-size: 5rem;
     }
@@ -102,6 +106,9 @@
   }
 
 @media (max-width: 500px) {
+    .skills > .text-zone > p {
+        margin-left: 0;
+    }
     .skills > .text-zone {
         width: 100vw;
         margin-left: 0;
