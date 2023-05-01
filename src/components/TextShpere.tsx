@@ -3,6 +3,7 @@ import "../Styles/TextShpere.css";
 import TagCloud from "TagCloud";
 
 const TextShpere = () => {
+  let radii;
   useEffect(() => {
     return () => {
       const container: any = ".tagcloud";
@@ -21,8 +22,19 @@ const TextShpere = () => {
         "GITHUB",
       ];
 
+      
+    function radiusValue() {
+
+      if (window.screen.width <= 500) {
+        radii = 180;
+      } else {
+        radii = 400;
+      }
+      return radii;
+    }
+
       const options: object = {
-        radius: 400,
+        radius: radiusValue(),
         maxSpeed: "fast",
         initSpeed: "fast",
         keep: true,

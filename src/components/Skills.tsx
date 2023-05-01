@@ -1,5 +1,6 @@
 
 import "../Styles/Skills.css";
+import TextShpere from "./TextShpere";
 
 export default function Skills() {
 
@@ -20,7 +21,7 @@ export default function Skills() {
         <p>1.0 and HTsionate about web.1.0 and HTsionate about web<br/>
         1.0 and HTsionate about web</p>
       </section>
-
+      <TextShpere />
     </div>
   )
 }

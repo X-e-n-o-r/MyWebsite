@@ -2,18 +2,18 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-left: 1.5rem;
-    margin-left: 9.4rem;
+    margin-left: 12rem;
+    height: 100vh;
 }
 
-.text-zone h1 {
-    font-size: 6em;
+h1 {
+    font-size: 6rem;
     line-height: 85px;
     letter-spacing: -3px;
     position: relative;
 }
 
-.text-zone h1::before{
+h1::before{
     content: '<h1>';
     position: absolute;
     top: -55px;
@@ -24,7 +24,7 @@
     letter-spacing: 3px;
 }
 
-.text-zone h1::after{
+h1::after{
     content: '</h1>';
     position: absolute;
     bottom: -60px;
@@ -35,7 +35,7 @@
     letter-spacing: 3px;
 }
   
-.text-zone .gray-text{
+.gray-text{
     margin-top: 70px;
     margin-bottom: 50px;
     color: #a2a2a3;
@@ -72,3 +72,19 @@
 .letter:hover {
     color: rgb(253, 33, 85);
 }
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .section-header {
+        margin-left: 12vw;
+        padding-left: 0;
+        margin-bottom: 0;
+        height: 100vh;
+    }
+    .gray-text{
+        font-size: 1.5em;
+    }
+  }

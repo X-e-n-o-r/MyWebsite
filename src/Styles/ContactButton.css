@@ -1,14 +1,10 @@
-.cntbtn-wrapper {
-    width: 200px;
-    height: 130px;
-}
-
 .contact-button {
     background: none;
     border: none;
     padding: 12px 20px;
-    min-width: 200px;
-    font-size: 1.5rem;  
+    min-width: 250px;
+    height: 75px;
+    font-size: 2.2rem;  
     cursor: pointer;
     position: relative;
 }
@@ -32,3 +28,15 @@
 .contact-button:hover::before {
     transform: translate(7px, 7px);
 }
+
+@media (max-width: 500px) {
+    .contact-button {
+        background: none;
+        border: none;
+        padding: 12px 20px;
+        min-width: 180px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+  }
