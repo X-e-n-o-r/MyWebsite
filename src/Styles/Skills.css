@@ -92,6 +92,15 @@
     letter-spacing: 3px;
 }
 
+@media (max-width: 1500px) {
+    .skills-header {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+  }
+
 @media (max-width: 500px) {
     .skills > .text-zone {
         width: 100vw;
@@ -104,6 +113,7 @@
 
     .skills-header {
         padding-left: 12vw;
+        font-size: 4rem;
     }
     .skills-header::before {
         content: '<h2>';
@@ -169,14 +179,5 @@
     .skills > .text-zone > p {
         padding-left: 12vw;
         padding-right: 12vw;
-    }
-  }
-
-  @media (max-width: 1500px) {
-    .skills-header {
-        font-size: 5rem;
-    }
-    p {
-        font-size: 1.6rem;
     }
   }
