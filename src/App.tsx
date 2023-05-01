@@ -1,28 +1,14 @@
-import { TagCloud, TagCloudOptions } from "@frank-mayer/react-tag-cloud";
-// same as: import TagCloud from "@frank-mayer/react-tag-cloud"
+import Header from "./components/Header"
+import Skills from "./components/Skills"
+import '../src/Styles/TextShpere.css'
+function App() {
 
-const App = () => (
-    <TagCloud
-        options={(w: Window & typeof globalThis): TagCloudOptions => ({
-            radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
-            maxSpeed: "fast",
-        })}
-        onClick={(tag: string, _ev: MouseEvent) => alert(tag)}
-        onClickOptions={{ passive: true }}
-    >
-        {[
-            "VSCode",
-            "TypeScript",
-            "React",
-            "Preact",
-            "Parcel",
-            "Jest",
-            "Next",
-            "ESLint",
-            "Framer Motion",
-            "Three.js",
-        ]}
-    </TagCloud>
-);
+  return (
+    <>
+      <Header />
+      <Skills />
+    </>
+  )
+}
 
 export default App

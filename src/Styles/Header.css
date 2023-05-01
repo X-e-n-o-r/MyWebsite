@@ -73,6 +73,10 @@ h1::after{
     color: rgb(253, 33, 85);
 }
 
+@media (max-width: 1500px) {
+
+}
+
 @media (max-width: 500px) {
     h1 {
         font-size: 3rem;

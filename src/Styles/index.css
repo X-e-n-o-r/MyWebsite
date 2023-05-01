@@ -93,6 +93,12 @@ h2 {
   line-height: 6.7rem;
 }
 
+@media (max-width: 1500px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 500px) {
   html::before {
     left: 10px;

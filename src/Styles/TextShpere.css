@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 3em;
 }
 
 .tagcloud {
@@ -30,6 +30,7 @@
 
 @media (max-width: 500px) {
     .tagcloud {
-        font-size: 1.1em;
+        font-size: 1em;
+
     }
 }
