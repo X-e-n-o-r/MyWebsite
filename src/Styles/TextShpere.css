@@ -31,5 +31,6 @@
 @media (max-width: 500px) {
     .tagcloud {
         font-size: 1em;
+        margin-top: 50px;
     }
 }
