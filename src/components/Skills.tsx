@@ -1,4 +1,4 @@
-import TextSphere from "./TextShpere.js";
+
 import "../Styles/Skills.css";
 
 export default function Skills() {
@@ -20,7 +20,7 @@ export default function Skills() {
         <p>1.0 and HTsionate about web.1.0 and HTsionate about web<br/>
         1.0 and HTsionate about web</p>
       </section>
-      <TextSphere />
+
     </div>
   )
 }
