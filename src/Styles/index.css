@@ -28,6 +28,14 @@ html::after {
   letter-spacing: 3px;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+}
+
 body::before {
   content: '<body>';
   position: absolute;
@@ -72,20 +80,36 @@ body::after {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h2 {
   color: #08fdd8;
   font-weight: 400;
-  margin-top: 0;
   position: relative;
   margin-bottom: 40px;
-  left: -10px;
   font-size: 6rem;
   line-height: 6.7rem;
+}
+
+@media (max-width: 420px) {
+  html::before {
+    left: 30px;
+    top: 20px;
+    font-size: 1rem;
+  }
+  html::after {
+    left: 30px;
+    bottom: 20px;
+    font-size: 1rem;
+  }
+  body::before {
+    left: 60px;
+    font-size: 1rem;
+  }
+  body::after {
+    left: 60px;
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: clamp(4rem, 5rem, 6rem);
+  }
 }
