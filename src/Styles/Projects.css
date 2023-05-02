@@ -11,7 +11,9 @@
     justify-content: center;
     align-items: center;
     color: rgb(32, 253, 220);
+    border: 2px solid #2d2b2b;
 }
+
 
 h3 {
     font-size: 4rem;
@@ -167,5 +169,17 @@ h3 {
         width: 60vw;
         height: 60vw;
         margin-bottom: 70px;
+    }
+
+    .project > .project-image {
+        width: 80%;
+    }
+
+    .overlay > h3 {
+        font-size: 2.4rem;
+    }
+
+    .overlay > p {
+        font-size: 1.5rem;
     }
 }

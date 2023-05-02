@@ -16,7 +16,7 @@ export default function Projects() {
         </a>
         <a href="">
           <div className="project">
-          <div className='overlay'>
+            <div className='overlay'>
               <h3>Chess</h3>
               <p>Made with React and OOP principles</p>
             </div>
