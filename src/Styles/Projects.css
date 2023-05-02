@@ -1,0 +1,171 @@
+.project {
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+    font-size: 5em;
+    background-color: black;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(32, 253, 220);
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+.overlay > p {
+    font-size: 2.5rem;
+}
+
+.project-image {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.overlay:hover {
+    backdrop-filter: blur(5px);
+    opacity: 1;
+}
+
+.work-section {
+    min-height: 100vh;
+    position: relative;
+}
+
+.work-section::before {
+    content: '<section>';
+    position: absolute;
+    top: -90px;
+    left: 10.2rem;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.work-section::after {
+    content: '</section>';
+    position: absolute;
+    bottom: 150px;
+    left: 10.2rem;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.project-text {
+    margin-left: 12rem;
+    margin-bottom: 70px;
+}
+
+.project-text::before {
+    content: '<h2>';
+    position: absolute;
+    top: -55px;
+    left: -10px;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.project-text::after {
+    content: '</h2>';
+    position: absolute;
+    bottom: -60px;
+    left: -10px;
+    font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .project {
+        font-size: 4rem;
+    }
+    .project-text::before {
+        content: '<h2>';
+        position: absolute;
+        top: -55px;
+        left: 40px;
+        font-size: 1.5rem;
+        font-family: 'La Belle Aurore', cursive;
+        color: #666565;
+        letter-spacing: 3px;
+    }
+    .project-text::after {
+        content: '</h2>';
+        position: absolute;
+        bottom: -60px;
+        left: 40px;
+        font-size: 1.5rem;
+        font-family: 'La Belle Aurore', cursive;
+        color: #666565;
+        letter-spacing: 3px;
+    }
+    .project-text {
+        padding-left: 12vw;
+        margin-left: 0;
+        font-size: 3.5rem;
+    }
+    .work-section::before {
+        content: '<section>';
+        position: absolute;
+        top: -90px;
+        left: 20px;
+        font-size: 1.5rem;
+        font-family: 'La Belle Aurore', cursive;
+        color: #666565;
+        letter-spacing: 3px;
+    }
+    
+    .work-section::after {
+        content: '</section>';
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 1.5rem;
+        font-family: 'La Belle Aurore', cursive;
+        color: #666565;
+        letter-spacing: 3px;
+    }
+    .work-section {
+        margin-top: 100px;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    .project {
+        width: 60vw;
+        height: 60vw;
+        margin-bottom: 70px;
+    }
+}

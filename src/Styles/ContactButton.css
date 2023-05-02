@@ -20,6 +20,7 @@
     bottom: 0;
     z-index: -1;
     transition: transform 0.3s ease-in-out;
+    border-radius: 30px;
 }
 
 .contact-button:hover::after {
