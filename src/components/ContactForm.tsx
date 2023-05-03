@@ -1,8 +1,10 @@
 import '../Styles/ContactForm.css'
-import '../Styles/Footer.css'
+import '../Styles/Links.css'
+import Links from './Links'
 
 export default function ContactMe() {
   return (
+    <div className='footer'>
       <div className="contact-section contact-wrapper">
       <div className="fake-big"></div>
       <form className="contact-form">
@@ -55,6 +57,8 @@ export default function ContactMe() {
           Send Message
         </button>
       </form>
+    </div>
+    <Links/>
     </div>
   )
 }

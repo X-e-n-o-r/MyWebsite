@@ -85,7 +85,7 @@ body::after {
 }
 
 h2 {
-  color: #08fdd8;
+  color: rgb(8, 253, 216);
   font-weight: 400;
   position: relative;
   margin-bottom: 70px;

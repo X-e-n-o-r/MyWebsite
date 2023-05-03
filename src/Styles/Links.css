@@ -1,0 +1,23 @@
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    max-height: 100vh;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+    }
+    .links {
+        flex-direction: row;
+    }
+}

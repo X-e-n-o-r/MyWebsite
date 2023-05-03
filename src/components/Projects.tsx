@@ -11,16 +11,16 @@ export default function Projects() {
               <h3>Chess</h3>
               <p>Made with React and OOP principles</p>
             </div>
-            <img className='project-image' src='../chess.png' alt='chess icon' />
+            <img className='project-image' src='chess.png' alt='chess icon' />
           </div>
         </a>
-        <a href="">
+        <a href="mailto: abc@example.com">
           <div className="project">
             <div className='overlay'>
               <h3>Chess</h3>
               <p>Made with React and OOP principles</p>
             </div>
-            <img className='project-image' src='../chess.png' alt='chess icon' />
+            <img className='project-image' src='chess.png' alt='chess icon' />
           </div>
         </a>
         <a href="">
@@ -29,7 +29,7 @@ export default function Projects() {
               <h3>Chess</h3>
               <p>Made with React and OOP principles</p>
             </div>
-            <img className='project-image' src='../chess.png' alt='chess icon' />
+            <img className='project-image' src='chess.png' alt='chess icon' />
           </div>
         </a>
       </div>
