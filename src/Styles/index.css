@@ -96,6 +96,7 @@ h2 {
 @media (max-width: 1500px) {
   body {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

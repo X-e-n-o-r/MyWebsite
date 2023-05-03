@@ -1,20 +1,95 @@
+#header > h2::before {
+  content: '<h2>';
+  position: absolute;
+  top: -55px;
+  left: -10px;
+  font-size: 1.5rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+
+#header > h2::after {
+  content: '</h2>';
+  position: absolute;
+  bottom: -60px;
+  left: -10px;
+  font-size: 1.5rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+
 .contact-heading {
-    margin-bottom: 30px;
-  }
-  .contact-section {
-    width: 85%;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-  }
-  .form-input-group {
-    width: 100%;
-    position: relative;
-  }
+  margin-bottom: 70px;
+}
+.contact-heading > p {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  position: relative;
+}
+
+.contact-heading > p::before {
+  content: '<p>';
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-size: 1.5rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+
+.contact-heading > p::after {
+  content: '</p>';
+  position: absolute;
+  bottom: -35px;
+  left: -10px;
+  font-size: 1.5rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+
+.contact-section {
+  max-width: 60%;
+  margin-left: 12rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-input-wrapper {
+  position: relative;
+}
+
+.form-input-wrapper::before {
+  content: '<form>';
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  font-size: 1.5rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+
+form::after {
+  content: '</form>';
+  position: absolute;
+  bottom: 125px;
+  left: -10px;
+  font-size: 1.5rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+.form-input-group {
+  width: 100%;
+  position: relative;
+}
   
   .form-input-group input,
   textarea {
@@ -34,14 +109,15 @@
     padding: 10px 20px;
   }
   .submit-button {
+    color: white;
+    margin-top: 30px;
     background: transparent;
     border: none;
     outline: none;
     float: right;
     display: block;
-    font-size: 1rem;
+    font-size: 1.7rem;
     cursor: pointer;
-    color: #8a8484;
   }
   
   .form-input-group input + span::after,
@@ -50,7 +126,7 @@
     width: 0;
     height: 2px;
     position: absolute;
-    background: #08fdd8;
+    background: rgb(8, 253, 216);
     bottom: 5px;
     left: 0;
     transition: ALL 0.3s linear;
@@ -94,26 +170,18 @@
   .message-content.hide {
     opacity: 0;
   }
-  
-  .google-map {
-    width: 100%;
-    position: relative;
+  @media (max-width: 1500px) {
+    form::after {
+      bottom: 65px;
+    }
   }
-  .google-map iframe {
-    width: 100%;
-    margin-top: 50px;
-    height: 60vh;
-  }
-  .map-content {
-    background-color: #000;
-    color: #f3f3f3;
-    position: absolute;
-    top: 70px;
-    left: 40px;
-    padding: 20px;
-    backdrop-filter: blur(70%);
-  }
-  .map-content span {
-    font-size: 16px;
-    line-height: 1.5rem;
+
+  @media (max-width: 500px) {
+    .contact-section {
+      margin-left: 12vw;
+      width: 80%;
+    }
+    .submit-button {
+      font-size: 1.5rem;
+    }
   }

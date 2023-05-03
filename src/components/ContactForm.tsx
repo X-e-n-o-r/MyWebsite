@@ -1,9 +1,9 @@
 import '../Styles/ContactForm.css'
+import '../Styles/Footer.css'
 
 export default function ContactMe() {
   return (
-    <footer>
-            <div className="contact-section contact-wrapper">
+      <div className="contact-section contact-wrapper">
       <div className="fake-big"></div>
       <form className="contact-form">
         <div className="contact-heading">
@@ -52,16 +52,9 @@ export default function ContactMe() {
         </div>
         <div className="message"></div>
         <button type="submit" className="contact-button submit-button">
-          <div>
-            <span className="bg"></span>
-            <span className="base"></span>
-            <span className="text">
-              Send Message
-            </span>
-          </div>
+          Send Message
         </button>
       </form>
-      </div>
-    </footer>
+    </div>
   )
 }
