@@ -4,11 +4,11 @@ import '../Styles/Links.css'
 export default function Links() {
   return (
     <div className='links'>
-    <a href='' target="_blank">
+    <a href='mailto: leowebd3v@gmail.com' target="_blank">
     <MailOutline
     color={'#08fdd8'} 
-    height="200px"
-    width="200px"
+    height="10vw"
+    width="10vw"
     cssClasses={'icon'}
     />
     </a>
@@ -16,18 +16,20 @@ export default function Links() {
     <LogoGithub
     color={'#08fdd8'} 
     title={'github'}
-    height="200px"
-    width="200px"
+    height="10vw"
+    width="10vw"
     cssClasses={'icon'}
     />
     </a>
+    <a href='mailto: leowebd3v@gmail.com' target="_blank">
     <LogoLinkedin
     color={'#08fdd8'} 
     title={'linkdin'}
-    height="200px"
-    width="200px"
+    height="10vw"
+    width="10vw"
     cssClasses={'icon'}
-    />    
+    />
+    </a>
     </div>
   )
 }
