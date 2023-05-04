@@ -11,7 +11,7 @@
 }
 
 .contact-button::after, .contact-button::before {
-    border: 2px solid rgb(253, 33, 85);
+    border: 2px solid #fd2155;
     content: "";
     position: absolute;
     width: calc(100% - 4px);

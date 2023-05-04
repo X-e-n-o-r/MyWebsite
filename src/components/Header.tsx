@@ -34,6 +34,9 @@ export default function Header() {
           <button className="contact-button">Contact me</button>
         </a>
       </div>
+      <div className='logo-wrap'>
+        <img src='Logo.svg' className='logo'/>
+      </div>
     </header>
   )
 }

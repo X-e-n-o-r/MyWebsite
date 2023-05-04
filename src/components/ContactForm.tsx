@@ -3,6 +3,7 @@ import '../Styles/Links.css'
 import Links from './Links'
 
 export default function ContactMe() {
+
   return (
     <div className='footer'>
       <div className="contact-section contact-wrapper">

@@ -4,7 +4,7 @@ import '../Styles/Links.css'
 export default function Links() {
   return (
     <div className='links'>
-    <a href='mailto: leowebd3v@gmail.com' target="_blank">
+    <a href='mailto: leowebd3v@gmail.com?subject' target="_blank">
     <MailOutline
     color={'#08fdd8'} 
     height="10vw"
