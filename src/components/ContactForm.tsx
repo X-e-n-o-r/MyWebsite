@@ -5,15 +5,15 @@ import emailjs from '@emailjs/browser';
 import React from 'react';
 
 export default function ContactMe() {
-  const form = React.useRef<HTMLInputElement>(null)
+  const form = React.useRef<any>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (_e: any) => {
 
     emailjs.sendForm('service_fycoczd', 'template_u9f1avk', form.current, 'eXi6qU1y0OLsw9roG')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
   };
   return (
@@ -62,7 +62,6 @@ export default function ContactMe() {
             className="textarea"
             name="message"
             spellCheck='false'>
-            spellcheck
           </textarea>
           <span></span>
         </div>
