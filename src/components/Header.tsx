@@ -1,4 +1,4 @@
-import '../Styles/ContactButton.css'
+import '../Styles/Button.css'
 import '../Styles/Header.css'
 export default function Header() {
   return (

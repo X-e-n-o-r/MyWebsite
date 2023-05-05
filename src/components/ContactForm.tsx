@@ -1,21 +1,34 @@
 import '../Styles/ContactForm.css'
 import '../Styles/Links.css'
 import Links from './Links'
+import emailjs from '@emailjs/browser';
+import React from 'react';
 
 export default function ContactMe() {
+  const form = React.useRef<HTMLInputElement>(null)
 
+  const sendEmail = (e: {
+    target: any; preventDefault: () => void; 
+}) => {
+
+    emailjs.sendForm('service_fycoczd', 'template_u9f1avk', form.current, 'eXi6qU1y0OLsw9roG')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className='footer'>
       <div className="contact-section contact-wrapper">
       <div className="fake-big"></div>
-      <form className="contact-form">
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="contact-heading">
           <div id="header">
             <h2>Contact me</h2>
           </div>
           <p>
-            I’m interested in freelance opportunities – especially ambitious or
-            large projects. However, if you have other request or question,
+            I’m interested in jop opportunities. Open for relocation. However, if you have other request or question,
             don’t hesitate to use the form.
           </p>
         </div>
@@ -46,11 +59,13 @@ export default function ContactMe() {
         </div>
         <div className="form-input-group">
           <textarea
-            //type="text"
+            autoComplete='off'
             placeholder="Message"
             className="textarea"
             name="message"
-          ></textarea>
+            spellCheck='false'>
+            spellcheck
+          </textarea>
           <span></span>
         </div>
         <div className="message"></div>

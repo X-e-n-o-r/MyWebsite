@@ -18,8 +18,9 @@ export default function Skills() {
           <span className="h2-head">s</span>
         </h2>
         <p>
-          I am a young front-end developer looking for expirience<br/>
-          I am familiar with all modern frameworks
+          I am a young front-end developer looking<br/> for expirience.<br/>
+          Familiar with most Front-end technologies<br/>
+          used in development
         </p>
       </section>
       <TextShpere />
