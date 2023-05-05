@@ -7,9 +7,7 @@ import React from 'react';
 export default function ContactMe() {
   const form = React.useRef<HTMLInputElement>(null)
 
-  const sendEmail = (e: {
-    target: any; preventDefault: () => void; 
-}) => {
+  const sendEmail = (e) => {
 
     emailjs.sendForm('service_fycoczd', 'template_u9f1avk', form.current, 'eXi6qU1y0OLsw9roG')
       .then((result) => {
