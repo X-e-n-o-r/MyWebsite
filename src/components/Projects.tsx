@@ -5,7 +5,7 @@ export default function Projects() {
     <section className="work-section">
       <h2 className='project-text'>My Projects</h2>
       <div className="projects">
-        <a href="">
+        <a href="https://x-e-n-o-r.github.io/ReactChess/" target="_blank">
           <div className="project">
             <div className='overlay'>
               <h3>Chess</h3>
@@ -14,7 +14,7 @@ export default function Projects() {
             <img className='project-image' src='chess.png' alt='chess icon' />
           </div>
         </a>
-        <a href="mailto: abc@example.com">
+        <a href="https://x-e-n-o-r.github.io/Adventure-Game/" target="_blank">
           <div className="project">
             <div className='overlay'>
               <h3>Game</h3>
@@ -23,7 +23,7 @@ export default function Projects() {
             <img className='project-image' src='adventure.png' alt='adventure game icon' />
           </div>
         </a>
-        <a href="">
+        <a href="https://x-e-n-o-r.github.io/YoutubeMP3/" target="_blank">
           <div className="project">
           <div className='overlay'>
               <h3>Downloader</h3>

@@ -21,7 +21,7 @@ export default function Links() {
     cssClasses={'icon'}
     />
     </a>
-    <a href='mailto: leowebd3v@gmail.com' target="_blank">
+    <a href=''>
     <LogoLinkedin
     color={'#08fdd8'} 
     title={'linkdin'}
