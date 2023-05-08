@@ -21,7 +21,7 @@ export default function Links() {
     cssClasses={'icon'}
     />
     </a>
-    <a href=''>
+    <a href='https://www.linkedin.com/in/lev-socot-12874b272/' target="_blank">
     <LogoLinkedin
     color={'#08fdd8'} 
     title={'linkdin'}
