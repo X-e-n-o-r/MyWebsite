@@ -3,7 +3,8 @@ import '../Styles/TextShpere.css'
 
 const TextShpere = () => (
 
-    <TagCloud
+    <div className="cloud">
+            <TagCloud
         options={(w: Window & typeof globalThis): TagCloudOptions => ({
             radius: Math.min(800, w.innerWidth, w.innerHeight) / 2,
             maxSpeed: "fast",
@@ -28,6 +29,8 @@ const TextShpere = () => (
             'CSS',
         ]}
     </TagCloud>
+    </div>
+
 );
 
 export default TextShpere
