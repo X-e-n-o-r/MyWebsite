@@ -21,7 +21,7 @@
     color: #fd2155;
 }
 
-.icon:hover path {
+.icon2:hover path {
     fill: #fd2155;
     transition: all 0.4s ease-in-out;
 }

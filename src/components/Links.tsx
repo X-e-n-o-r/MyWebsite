@@ -12,20 +12,20 @@ export default function Links() {
     cssClasses={'icon'}
     />
     </a>
-    <a href='https://github.com/X-e-n-o-r' target="_blank">
-    <LogoGithub
-    color={'#08fdd8'} 
-    height="10vw"
-    width="10vw"
-    cssClasses={'icon'}
-    />
-    </a>
     <a href='https://www.linkedin.com/in/lev-socot-12874b272/' target="_blank">
     <LogoLinkedin
     color={'#08fdd8'} 
     height="10vw"
     width="10vw"
-    cssClasses={'icon'}
+    cssClasses={'icon2'}
+    />
+    </a>
+    <a href='https://github.com/X-e-n-o-r' target="_blank">
+    <LogoGithub
+    color={'#08fdd8'} 
+    height="10vw"
+    width="10vw"
+    cssClasses={'icon2'}
     />
     </a>
     </div>
