@@ -1,4 +1,5 @@
 
+import { TypeAnimation } from "react-type-animation";
 import "../Styles/Skills.css";
 import TextShpere from "./TextShpere";
 
@@ -8,19 +9,24 @@ export default function Skills() {
     <div className="skills">
       <section className="text-zone">
         <h2 className="skills-header">
-          <span className="h2-head">M</span>
-          <span className="h2-head">y</span>
-          <span className="h2-head"> s</span>
-          <span className="h2-head">k</span>
-          <span className="h2-head">i</span>
-          <span className="h2-head">l</span>
-          <span className="h2-head">l</span>
-          <span className="h2-head">s</span>
+        <TypeAnimation
+      sequence={[
+        'My skills', // Types 'One'
+        3000, // Waits 1s
+        'Technologies', // Deletes 'One' and types 'Two'
+        3000, // Waits 2s
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+    />
         </h2>
         <p>
-          I am a young front-end developer looking<br/> for expirience.<br/>
-          Familiar with most Front-end technologies<br/>
-          used in development
+        As a junior front-end developer,<br/>
+        I am passionate about creating dynamic and visually appealing websites that engage users.<br/>
+        With a strong foundation in HTML, CSS, and JavaScript,<br/>
+        I am dedicated to staying up-to-date with the latest web development trends and technologies.<br/>
+        In addition to my technical skills, I am a collaborative team player who is always eager to learn and grow as a developer.
         </p>
       </section>
       <TextShpere />

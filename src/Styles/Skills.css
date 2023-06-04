@@ -4,6 +4,7 @@
     justify-content: space-between;
     max-width: 99vw;
     height: 100vh;
+    margin-bottom: 100px;
 }
 
 .skills-header::before {

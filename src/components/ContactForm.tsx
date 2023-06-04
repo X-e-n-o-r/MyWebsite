@@ -1,3 +1,4 @@
+import { TypeAnimation } from 'react-type-animation';
 import '../Styles/ContactForm.css'
 import '../Styles/Links.css'
 import Links from './Links'
@@ -17,13 +18,24 @@ export default function ContactMe() {
       });
   };
   return (
-    <div className='footer'>
+    <div className='footer' id='footer'>
       <div className="contact-section contact-wrapper">
       <div className="fake-big"></div>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="contact-heading">
           <div id="header">
-            <h2>Contact me</h2>
+            <h2>
+            <TypeAnimation
+      sequence={[
+        'Contact me',
+        3000,
+        'Check out my socials',
+        3000,
+      ]}
+      cursor={true}
+      repeat={Infinity}
+    />
+            </h2>
           </div>
           <p>
             I’m interested in jop opportunities. Open for relocation. However, if you have other request or question,

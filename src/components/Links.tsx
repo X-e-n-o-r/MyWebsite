@@ -15,7 +15,6 @@ export default function Links() {
     <a href='https://github.com/X-e-n-o-r' target="_blank">
     <LogoGithub
     color={'#08fdd8'} 
-    title={'github'}
     height="10vw"
     width="10vw"
     cssClasses={'icon'}
@@ -24,7 +23,6 @@ export default function Links() {
     <a href='https://www.linkedin.com/in/lev-socot-12874b272/' target="_blank">
     <LogoLinkedin
     color={'#08fdd8'} 
-    title={'linkdin'}
     height="10vw"
     width="10vw"
     cssClasses={'icon'}

@@ -8,6 +8,7 @@ const TextShpere = () => (
             radius: Math.min(900, w.innerWidth, w.innerHeight) / 2,
             maxSpeed: "fast",
         })}
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         onClick={(tag: string, _ev: MouseEvent) => alert(tag)}
         onClickOptions={{ passive: true }}
     >

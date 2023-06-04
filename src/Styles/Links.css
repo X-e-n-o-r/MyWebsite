@@ -18,7 +18,12 @@
 }
 
 .icon:hover {
-    transform: scale(1.2);
+    color: #fd2155;
+}
+
+.icon:hover path {
+    fill: #fd2155;
+    transition: all 0.4s ease-in-out;
 }
 
 @media (max-width: 500px) {
