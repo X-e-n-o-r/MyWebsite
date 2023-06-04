@@ -25,12 +25,7 @@ export default function ContactMe() {
         <div className="contact-heading">
           <div id="header">
             <h2>
-            <TypeAnimation
-      sequence={[
-        'Contact me',
-      ]}
-      cursor={true}
-    />
+Contact me
             </h2>
           </div>
           <p>
