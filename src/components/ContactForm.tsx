@@ -28,12 +28,8 @@ export default function ContactMe() {
             <TypeAnimation
       sequence={[
         'Contact me',
-        3000,
-        'Check out my socials',
-        3000,
       ]}
       cursor={true}
-      repeat={Infinity}
     />
             </h2>
           </div>

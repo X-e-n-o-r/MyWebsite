@@ -11,10 +11,9 @@ export default function Skills() {
         <h2 className="skills-header">
         <TypeAnimation
       sequence={[
-        'My skills', // Types 'One'
-        3000, // Waits 1s
-        'Technologies', // Deletes 'One' and types 'Two'
-        3000, // Waits 2s
+        'My skills', 
+        3000, 
+
       ]}
       wrapper="span"
       cursor={true}
@@ -24,7 +23,6 @@ export default function Skills() {
         <p>
         As a junior front-end developer,<br/>
         I am passionate about creating dynamic and visually appealing websites that engage users.<br/>
-        With a strong foundation in HTML, CSS, and JavaScript,<br/>
         I am dedicated to staying up-to-date with the latest web development trends and technologies.<br/>
         In addition to my technical skills, I am a collaborative team player who is always eager to learn and grow as a developer.
         </p>

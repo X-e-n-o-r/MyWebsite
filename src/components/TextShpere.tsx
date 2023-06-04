@@ -5,7 +5,7 @@ const TextShpere = () => (
 
     <TagCloud
         options={(w: Window & typeof globalThis): TagCloudOptions => ({
-            radius: Math.min(900, w.innerWidth, w.innerHeight) / 2,
+            radius: Math.min(800, w.innerWidth, w.innerHeight) / 2,
             maxSpeed: "fast",
         })}
         // eslint-disable-next-line @typescript-eslint/no-unused-vars

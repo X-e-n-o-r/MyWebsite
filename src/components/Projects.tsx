@@ -11,8 +11,7 @@ export default function Projects() {
         3000, // Waits 1s
         'Chess', // Deletes 'One' and types 'Two'
         3000, // Waits 2s
-        'Text adventure', // Types 'Three' without deleting 'Two'
-        3000,
+
         'Sudoku',
         3000,
         () => {
