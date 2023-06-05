@@ -119,10 +119,7 @@ h1::after{
     .gray-text{
         font-size: 1.5em;
     }
-    .text-zone {
-        width: 100%;
-    }
     .text-zone > h1 {
-        width: 100%;
+        width: 88vw;
     }
   }
