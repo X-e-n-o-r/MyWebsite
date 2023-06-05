@@ -9,7 +9,17 @@ export default function Skills() {
     <div className="skills">
       <section className="text-zone">
         <h2 className="skills-header">
-My skills
+        <TypeAnimation
+      sequence={[
+        'My skills', 
+        3000, 
+        'Technology',
+        3000,
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+    />
         </h2>
         <p>
         As a junior front-end developer,<br/>

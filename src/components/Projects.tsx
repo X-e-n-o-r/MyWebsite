@@ -5,7 +5,22 @@ export default function Projects() {
   return (
     <section className="work-section">
       <h2 className='project-text'>
-        My projects
+      <TypeAnimation
+      sequence={[
+        'My projects', // Types 'One'
+        3000, // Waits 1s
+        'Chess', // Deletes 'One' and types 'Two'
+        3000, // Waits 2s
+
+        'Sudoku',
+        3000,
+        () => {
+          console.log('Sequence completed'); // Place optional callbacks anywhere in the array
+        }
+      ]}
+      cursor={true}
+      repeat={Infinity}
+    />
       </h2>
       <div className="projects">
         <a href="https://x-e-n-o-r.github.io/ReactChess/" target="_blank">
