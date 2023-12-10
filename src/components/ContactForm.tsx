@@ -38,7 +38,7 @@ export default function ContactMe() {
             </h2>
           </div>
           <p>
-            I’m interested in jop opportunities. Open for relocation. However, if you have other request or question,
+            I’m interested in job opportunities. Open for relocation. However, if you have other request or question,
             don’t hesitate to use the form.
           </p>
         </div>
